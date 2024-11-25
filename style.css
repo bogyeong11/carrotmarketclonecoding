@@ -350,5 +350,76 @@ body {
 }
 
 .footer-links a:hover {
-    color: #ff8c00; /* Orange color on hover */
+    color: #ff8c00; 
+}
+
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 좌우 중앙 정렬 */
+    background-color: #fff8f3; /* 배경색 */
+}
+
+.text-content {
+    max-width: 50%; /* 텍스트 영역 제한 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    margin-left: 10px; /* 이미지와의 간격 추가 */
+}
+
+.title {
+    font-size: 30px; /* 글자 크기 */
+    color: #ff6e01;
+    margin-top: 20px; /* 위쪽 간격 축소 */
+    margin-bottom: 10px; /* 아래쪽 간격 축소 */
+    line-height: 1.2; /* 줄 간격 조정 */
+}
+
+.subtitle {
+    font-size: 40px; /* 부제목 글자 크기 */
+    color: #000; /* 부드러운 검정색 */
+    margin-top: 0; /* 위쪽 간격 제거 */
+    margin-bottom: 20px; /* 아래쪽 간격 축소 */
+    line-height: 1.2; /* 줄 간격 조정 */
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px; /* 버튼 간격 유지 */
+    margin-bottom: 40px; /* 아래쪽 간격 유지 */
+}
+
+.download-buttons img {
+    width: auto; /* 버튼 크기 조정 */
+    height: 40px;
+    cursor: pointer;
+}
+
+.right-image {
+    max-width: 50%; /* 이미지 영역 제한 */
+    text-align: right; /* 이미지 중앙 정렬 */
+    margin-right: 0px; /* 텍스트와의 간격 추가 */
+}
+
+.right-image img {
+    width: 100%; /* 이미지 크기 조정 */
+    max-height: 365px; /* 최대 크기 제한 */
+}
+
+@media (max-width: auto) {
+    .container {
+        flex-direction: column; /* 좁은 화면에서는 세로 배치 */
+        text-align: center; /* 중앙 정렬 */
+       
+    }
+
+    .text-content {
+        margin-left: 0; /* 좌측 여백 제거 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+
+    .right-image {
+        text-align: right;
+    }
 }
